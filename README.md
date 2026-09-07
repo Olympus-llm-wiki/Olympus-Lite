@@ -6,6 +6,10 @@
 
 Для варианта с Hindsight используйте [Olympus Max](https://github.com/Olympus-llm-wiki/Olympus-Max).
 
+## Обновление 0.2.0
+
+Добавлены [25 навыков и медиа-навык](docs/skills.md), переносимые инструкции Codex/Claude и проверка состава поставки. Файловый CLI сохраняет работу без сети и модельных зависимостей.
+
 ## Начать
 
 Нужен Python 3.11+. Скачайте репозиторий в отдельную папку:
@@ -56,3 +60,5 @@ python3 -m unittest discover -s tests -q
 ```
 
 Runtime использует только стандартную библиотеку Python. Для запуска из checkout установка дополнительных пакетов не нужна.
+
+Проверка состава: `python3 scripts/verify-distribution.py`. [Как обновлять поставку](docs/updating.md).
